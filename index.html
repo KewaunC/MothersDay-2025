@@ -23,36 +23,87 @@
       <h2>To the Best Mom Ever 💚</h2>
       <p>Click the button below for a surprise!</p>
       <button id="revealButton">Reveal</button>
-      <div class="message" id="cardMessage" style="display:none;">You're the sunshine that lights up our world. I love you forever 🌻</div>
+      <div class="message" id="cardMessage" style="display:none;">
+        <blockquote>
+          <p><em>the garden</em></p>
+          <p>the garden is rich with harvest<br>
+          even in the winter months<br>
+          the root vegetables holding<br>
+          their sweetness under the snow.</p>
+  
+          <p>my mother’s hands could always<br>
+          dig in the earth and pull out<br>
+          something good. her touch<br>
+          could make a fallen bulb rise<br>
+          again.</p>
+  
+          <p>and she would stand in her small space<br>
+          fleshy and fragrant<br>
+          a woman of color in a garden<br>
+          of green thumbs.</p>
+  
+          <p>the garden is rich with harvest<br>
+          she is the garden.</p>
+  
+          <small>— Lucille Clifton</small>
+        </blockquote>
+      </div>
     </div>
   </section>
+  
+  
+  
 
   <section id="tribute">
     <h2>🌼 A Loving Tribute</h2>
-    <img src="./Flower Photo.jpg" alt="Mom Nature" style="width: 100%; border-radius: 10px;">
+    <img src="./Flower Photo.jpg" alt="Mom Nature" class="tribute-image">
     <p>
       Thank you for every hug, every laugh, and every lesson. Like the Earth nurtures the trees, your love grounds and grows us. 💖
     </p>
-    <blockquote><em>"A mother's love is the root of all blooming hearts."</em></blockquote>
+    <p>
+      You're the sunshine that lights up our world. I love you forever 🌻
+    </p>
   </section>
 
   <section id="quotes">
-    <h2>🌿 Quotes for You </h2>
-    <button id="quoteButton">Get Inspired</button>
-    <div class="message" id="quoteBox">Click the button to see a lovely message 🌼</div>
+    <h2>🌿 Quotes for You</h2>
+    <button id="quoteButton">Message for Taylor!</button>
+    <div class="message" id="quoteBox">Click the button to see a lovely message 🌸</div>
   </section>
 
   <section id="bouquet">
     <h2>💐 Click a Flower</h2>
-    <div class="flowers">
-      <div class="flower" data-message="Your smile brightens every day!">🌸</div>
-      <div class="flower" data-message="Your kindness blossoms everywhere!">🌼</div>
-      <div class="flower" data-message="You are rooted in love and strength!">🌻</div>
-      <div class="flower" data-message="You make life beautiful!">🌺</div>
+    <div class="bouquet-container">
+      <div class="bouquet">
+        <div class="flowers">
+          <div class="flower" data-message="Your smile brightens every day!">🌸</div>
+          <div class="flower" data-message="Your kindness blossoms everywhere!">🌼</div>
+          <div class="flower" data-message="You are rooted in love and strength!">🌻</div>
+        </div>
+        <div class="flowers">
+          <div class="flower" data-message="You make life beautiful!">🌺</div>
+          <div class="flower" data-message="Your love blooms endlessly!">🌷</div>
+        </div>
+        <div class="message" id="flowerMessage"></div>
+      </div>
+  
+      <div class="bouquet">
+        <div class="flowers">
+          <div class="flower" data-message="Your light fills the room!">🌹</div>
+          <div class="flower" data-message="You are a rare and beautiful soul!">🌿</div> <!-- Replaced Lavender with 🌿 -->
+          <div class="flower" data-message="A flower that never wilts, just like your love!">💐</div>
+        </div>
+        <div class="flowers">
+          <div class="flower" data-message="Your presence is always a breath of fresh air!">🌻</div> <!-- Switched with lavender 🌸 -->
+          <div class="flower" data-message="In every garden, you are the brightest bloom!">🌺</div>
+        </div>
+        <div class="message" id="flowerMessage"></div>
+      </div>
     </div>
-    <div class="message" id="flowerMessage"></div>
   </section>
-
+  
+  
+  
   <script src="script.js"></script>
 </body>
 </html>

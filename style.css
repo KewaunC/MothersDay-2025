@@ -1,10 +1,27 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(#fefbd8, #d4f1be);
-    color: #3e4c3f;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(#fefbd8, #d4f1be);
+  color: #3e4c3f;
+  position: relative;
+}
+
+/* 🌸 Floral Border Frame */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('./pngtree-purple-flower-frame-png-image_8908753-127923890.png') repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all content sits above the border decoration */
+body > * {
+  position: relative;
+  z-index: 1;
+}
   header {
     background: #ffe066;
     padding: 1rem;
@@ -50,24 +67,71 @@ body {
     display: block;
   }
   
+  blockquote {
+    font-style: italic;
+    color: #4a4a4a;
+    border-left: 4px solid #a3d9a5;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    background: #ffffffcc;
+    border-radius: 8px;
+    max-width: 700px;
+  }
+  
+  blockquote small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+    font-style: normal;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(to right, #ffdd57, #ffe799);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #3e4c3f;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #ffe799, #fff3b0);
+  }
+  
+
   @keyframes fadeIn {
     from {opacity: 0; transform: translateY(10px);}
     to {opacity: 1; transform: translateY(0);}
   }
   
-  .card {
-    background: #ffffffee;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
+  .bouquet-container {
+    display: flex;
+    justify-content: space-evenly; /* Space the bouquets equally */
+    gap: 2rem; /* Add some space between the two T shapes */
+  }
+  
+  .bouquet {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically in each bouquet */
+    align-items: center; /* Center the flowers within each bouquet */
   }
   
   .flowers {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Centers the flowers horizontally */
     gap: 1rem;
+    margin-bottom: 1rem; /* Adds space between rows */
+  }
+  
+  .flowers:nth-of-type(2) {
+    flex-direction: column; /* The second row is a vertical column */
+    align-items: center; /* Centers the flowers vertically in the column */
+    margin-top: -1rem; /* Pulls the second set of flowers up to touch the horizontal ones */
   }
   
   .flower {
@@ -92,5 +156,13 @@ body {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #3c3c3c;
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .flowers {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
   }
   
