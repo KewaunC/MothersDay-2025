@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(#fefbd8, #d4f1be);
+    color: #3e4c3f;
+  }
+  
+  header {
+    background: #ffe066;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: #a3d9a5;
+    padding: 0.5rem;
+  }
+  
+  nav button {
+    padding: 0.5rem 1rem;
+    background: #f9fafc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  nav button:hover {
+    background: #ffe066;
+  }
+  
+  section {
+    display: none;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  .card {
+    background: #ffffffee;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .flowers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .flower {
+    background: #ffccd5;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .flower:hover {
+    transform: scale(1.1);
+  }
+  
+  .message {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #3c3c3c;
+  }
+  

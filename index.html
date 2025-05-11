@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mother's Day Nature Tribute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌞 Happy Mother's Day 🌿</h1>
+  </header>
+
+  <nav>
+    <button data-section="card">Card</button>
+    <button data-section="tribute">Tribute</button>
+    <button data-section="quotes">Quotes</button>
+    <button data-section="bouquet">Bouquet</button>
+  </nav>
+
+  <section id="card" class="active">
+    <div class="card">
+      <h2>To the Best Mom Ever 💚</h2>
+      <p>Click the button below for a surprise!</p>
+      <button id="revealButton">Reveal</button>
+      <div class="message" id="cardMessage" style="display:none;">You're the sunshine that lights up our world. I love you forever 🌻</div>
+    </div>
+  </section>
+
+  <section id="tribute">
+    <h2>🌼 A Loving Tribute</h2>
+    <img src="./Flower Photo.jpg" alt="Mom Nature" style="width: 100%; border-radius: 10px;">
+    <p>
+      Thank you for every hug, every laugh, and every lesson. Like the Earth nurtures the trees, your love grounds and grows us. 💖
+    </p>
+    <blockquote><em>"A mother's love is the root of all blooming hearts."</em></blockquote>
+  </section>
+
+  <section id="quotes">
+    <h2>🌿 Quotes for You </h2>
+    <button id="quoteButton">Get Inspired</button>
+    <div class="message" id="quoteBox">Click the button to see a lovely message 🌼</div>
+  </section>
+
+  <section id="bouquet">
+    <h2>💐 Click a Flower</h2>
+    <div class="flowers">
+      <div class="flower" data-message="Your smile brightens every day!">🌸</div>
+      <div class="flower" data-message="Your kindness blossoms everywhere!">🌼</div>
+      <div class="flower" data-message="You are rooted in love and strength!">🌻</div>
+      <div class="flower" data-message="You make life beautiful!">🌺</div>
+    </div>
+    <div class="message" id="flowerMessage"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
