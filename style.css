@@ -145,6 +145,7 @@ body > * {
     justify-content: center;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.5rem; /* Larger font size for the flower symbols */
     transition: transform 0.3s;
   }
   
